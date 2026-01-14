@@ -3,16 +3,17 @@ package sqma;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class MatematicaSumaTest {
+public class MatematicaParTest {
+
     @Test
-    void sumaPozitive() {
+    void esteParTrue() {
         Matematica m = new Matematica();
-        assertEquals(7, m.suma(3,4));
+        assertTrue(m.estePar(10));
     }
 
     @Test
-    void sumaCuZero() {
+    void esteParFalse() {
         Matematica m = new Matematica();
-        assertEquals(5, m.suma(5,0));
+        assertFalse(m.estePar(7));
     }
 }
